@@ -5,41 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Portfolio Management System</title>
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Container for centered layout */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        h1 {
+            text-align: center;
+            color: #eba05d;
+        }
+
+        /* Section titles */
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #84b5ec;
+            padding-bottom: 5px;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f0c058;
+            color: rgb(241, 241, 241);
+        }
+
+          /* Total Portfolio Value styling */
+          .total-value {
+            font-size: 1.5em;
+            color: #e2b24a;
+            margin-top: 20px;
+        }
+
+        /* Center-aligned elements */
+        .center {
+            text-align: center;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #ece2a1;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #ebaafd;
+        }
+    </style>
 </head>
 <body>
-    <h1>Financial Portfolio Management System</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Value</th>
-                <th>Allocation</th>
-            </tr>
-        </thead>
-        <tbody id="portfolio-tbody"></tbody> <!-- Add this element -->
-    </table>
-</div>
+    <div class="container">
+        <h1>Financial Portfolio Management System</h1>
+        
+        <h2>Portfolio Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Value</th>
+                    <th>Allocation (%)</th>
+                </tr>
+            </thead>
+            <tbody id="portfolio-tbody">
+                <!-- Portfolio details will be inserted here -->
+            </tbody>
+        </table>
 
-<div id="transaction-log" class="section">
-    <h2>Transaction Log</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Asset</th>
-                <th>Type</th>
-                <th>Quantity</th>
-            </tr>
-        </thead>
-        <tbody id="transaction-tbody">
-        </tbody>
-    </table>
-</div>
-<div id="portfolio-value" class="section"> <h2>Total Portfolio Value</h2> <p id="total-value">$0</p> </div>
+        <div class="total-value center" id="total-value">
+            <!-- Total portfolio value will be displayed here -->
+        </div>
+
+        <h2>Transaction Log</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Asset Name</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="transaction-tbody">
+                <!-- Transaction log details will be inserted here -->
+            </tbody>
+        </table>
+    </div>
 
     <script type="module" src="main.js"></script>
 </body>
 </html>
-
