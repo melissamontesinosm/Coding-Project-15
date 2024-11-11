@@ -1,3 +1,4 @@
+
 export const assetList = [ //Example data
     { id: 1, name: "Alphabet Inc", type: "stock", price: 179.86, quantity: 25 },
     { id: 2, name: "10Y US Treasury Bond", type: "bond", price: 100, quantity: 80 },

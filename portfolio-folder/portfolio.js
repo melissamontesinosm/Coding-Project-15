@@ -1,3 +1,4 @@
+
 import { assetList, getAssetById } from "./asset.js"; // Call assets from assets.js file
 
 export function calculatePortfolioValue() { // Calculate total value of the portfolio
